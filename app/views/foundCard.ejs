@@ -1,0 +1,20 @@
+<%- include('header') %>
+
+<h1><%= title %></h1>
+
+<% if (locals.searchResult?.length) { %> <% for(const elements of searchResult
+){ %>
+
+<div class="cardsContainer">
+  <div class="card">
+    <a href="#">
+      <img
+        src="/visuals/<%= elements.visual_name %>"
+        alt="<%= elements.name %> illustration"
+      />
+      <p class="cardName"><%= elements.name %></p>
+    </a>
+    <a class="link--addCard" title="Ajouter au deck" href="#">[ + ]</a>
+  </div>
+</div>
+<% } %> <% } %> <%- include('footer') %>
