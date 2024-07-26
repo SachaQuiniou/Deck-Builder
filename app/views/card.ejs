@@ -11,7 +11,12 @@
       />
       <p class="cardName"><%= card.name %></p>
     </a>
-    <a class="link--addCard" title="Ajouter au deck" href="#">[ + ]</a>
+    <a
+      class="link--addCard"
+      title="Ajouter au deck"
+      href="/addcard/<%= card.id %>"
+      >[ + ]</a
+    >
   </div>
 </div>
 

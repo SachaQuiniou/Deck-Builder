@@ -14,7 +14,12 @@
       />
       <p class="cardName"><%= elements.name %></p>
     </a>
-    <a class="link--addCard" title="Ajouter au deck" href="#">[ + ]</a>
+    <a
+      class="link--addCard"
+      title="Ajouter au deck"
+      href="/addcard/<%= elements.id %>"
+      >[ + ]</a
+    >
   </div>
 </div>
 <% } %> <% } %> <%- include('footer') %>
